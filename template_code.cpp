@@ -30,7 +30,7 @@ using pi = pair<int,int>;
 #define REP0(i,n) REPh(i,0,n)
 #define all(x) begin(x), end(x)
 #define rall(x) rbegin(x), rend(x)
-#define AC(x) accumulate
+#define AC accumulate
 /* for Geometry
 #include <complex>
 #define X real()
