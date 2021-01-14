@@ -20,7 +20,6 @@ using ll = long long;
 using pi = pair<int,int>;
 #define F first
 #define S second
-#define PB push_back
 #define EB emplace_back
 #define end '\n'
 #define REPc(i,a,b) for (int i = a; i <= b; ++i)
