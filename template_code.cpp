@@ -21,7 +21,7 @@ using pi = pair<int,int>;
 #define F first
 #define S second
 #define EB emplace_back
-#define end '\n'
+#define endl '\n'
 #define REPc(i,a,b) for (int i = a; i <= b; ++i)
 #define REPh(i,a,b) for (int i = a; i < b; ++i)
 #define REP1(i,n) REPc(i,1,n)
