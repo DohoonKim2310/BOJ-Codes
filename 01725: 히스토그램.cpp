@@ -13,7 +13,7 @@ int main() {
     for (int i = 0; i < n; ++i) cin >> data_[i];
     for (ll i = 0; i < n; ++i) {
         tmp = {data_[i], i};
-        while (!s.empty() && s.top().hi > data_[i]) {
+        while (!empty(s) && s.top().hi > data_[i]) {
             ans = max(ans, s.top().hi*(i-s.top().sp));
             tmp.sp = min(s.top().sp, tmp.sp);
             s.pop();
