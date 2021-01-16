@@ -47,8 +47,15 @@ using indexSet = tree<int,null_type,less<int>,rb_tree_tag,tree_order_statistics_
 #define fbo find_by_order
 #define ook order_of_key
 */
+#define R first
+#define C second
+#define isIn0(r,c) (r >= 0 && r < maxr && c >= 0 && r < maxc)
+#define isIn1(r,c) (r > 0 && r <= maxr && c > 0 && c <= maxc)
 const int INF = INT_MAX, MOD = 1e9+7, dx[] = {0,0,1,-1}, dy[] = {1,-1,0,0};
 const ll INFll = LLONG_MAX;
+
+//start here
+const maxr = 0, maxc = 0;
 
 void solve() {}
 
