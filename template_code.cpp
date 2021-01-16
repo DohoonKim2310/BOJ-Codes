@@ -47,7 +47,7 @@ using indexSet = tree<int,null_type,less<int>,rb_tree_tag,tree_order_statistics_
 #define fbo find_by_order
 #define ook order_of_key
 */
-const int INF = INT_MAX, MOD = 1e9+7;
+const int INF = INT_MAX, MOD = 1e9+7, dx[] = {0,0,1,-1}, dy[] = {1,-1,0,0};
 const ll INFll = LLONG_MAX;
 
 void solve() {}
