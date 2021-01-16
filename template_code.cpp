@@ -1,22 +1,4 @@
-#include <iostream>
-#include <algorithm>
-#include <cmath>
-#include <cassert>
-#include <functional>
-#include <string>
-#include <vector>
-#include <stack>
-#include <queue>
-#include <deque>
-#include <set>
-#include <bitset>
-#include <map>
-#include <unordered_map>
-#include <memory>
-#include <tuple>
-#include <cctype>
-#include <numeric>
-#include <climits>
+#include <bits/stdc++.h>
 using namespace std;
 using ll = long long;
 using pi = pair<int,int>;
@@ -32,7 +14,6 @@ using pi = pair<int,int>;
 #define rall(x) rbegin(x), rend(x)
 #define AC accumulate
 /* for Geometry
-#include <complex>
 #define X real()
 #define Y imag()
 #define cross(u,v) (conj(u)*(v)).Y
