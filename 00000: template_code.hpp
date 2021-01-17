@@ -20,6 +20,8 @@
 using namespace std;
 using ll = long long;
 using pi = pair<int,int>;
+template<class T> using minpq = priority_queue<T,vector<T>,greater<T>>;
+template<class T> using maxpq = priority_queue<T>;
 #define F first
 #define S second
 #define EB emplace_back
@@ -33,6 +35,8 @@ using pi = pair<int,int>;
 #define AC accumulate
 #define dbg cout << "wtf"
 #define dbgpr(x) cout << #x << " is " << x << endl
+#define LB lower_bound
+#define UB upper_bound
 /* for Geometry
 #include <complex>
 #define X real()
