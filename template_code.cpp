@@ -32,6 +32,7 @@ using pi = pair<int,int>;
 #define rall(x) rbegin(x), rend(x)
 #define AC accumulate
 #define dbg cout << "wtf"
+#define dbgpr(x) cout << #x << " is " << x << endl
 /* for Geometry
 #include <complex>
 #define X real()
