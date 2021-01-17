@@ -22,7 +22,7 @@ int dp(int x, int y) {
     if (ready[x][y]) return m[x][y];
     assert(x != y);
     ready[x][y] = true;
-    m[x][y] = INT_MAX;
+    m[x][y] = INF;
     if (x > y) {
         if (x == y+1) REP0(k,y) {
             if (m[x][y] > dp(k,y)+dist(x,k,0)) {
@@ -55,7 +55,7 @@ int main() {
     m[1][0] = dist(1,0,0); ready[1][0] = true;
     m[0][1] = dist(1,0,1); ready[0][1] = true;
     //print
-    int mn = 0x7f7f7f7f;
+    int mn = INF;
     pi endpoint;
     REP0(i,w) {
         if (mn > dp(w,i)) {
