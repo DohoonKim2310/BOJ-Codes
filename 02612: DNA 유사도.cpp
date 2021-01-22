@@ -32,8 +32,8 @@ int main() {
 	//그대로 같다면 3을 더한다
 	//역추적 과정이 필요하다
 	//dp[i,j]: a[0...i-1]와 b[0...j-1]의 유사도
-    int mx = -1;
-    pi maxpos;
+	int mx = -1;
+	pi maxpos;
 	for (int i = 1; i <= n; ++i) {
 		for (int j = 1; j <= m; ++j) {
             if (a[i-1] == b[j-1]) dp[i][j] = dp[i-1][j-1]+3;
@@ -41,11 +41,11 @@ int main() {
             if (mx < dp[i][j]) {mx = dp[i][j]; maxpos = {i, j};}
 		}
 	}
-    //print
+	//print
 	cout << mx << '\n';
 	track(maxpos);
-    reverse(ans1.begin(), ans1.end()); for (auto p : ans1) cout << p; cout << '\n';
-    reverse(ans2.begin(), ans2.end()); for (auto p : ans2) cout << p; cout << '\n';
-//    for (int i = 0; i <= n; ++i) for (int j = 0; j <= m; ++j) cout << dp[i][j] << " \n"[j == m];
+    	reverse(ans1.begin(), ans1.end()); for (auto p : ans1) cout << p; cout << '\n';
+	reverse(ans2.begin(), ans2.end()); for (auto p : ans2) cout << p; cout << '\n';
+//    	  for (int i = 0; i <= n; ++i) for (int j = 0; j <= m; ++j) cout << dp[i][j] << " \n"[j == m];
 	return 0;
 }
