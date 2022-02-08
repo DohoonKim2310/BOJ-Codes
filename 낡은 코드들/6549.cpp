@@ -10,7 +10,7 @@ vector<ll> ansArray;
 int main() {
     while(1) {
         int n; cin >> n;
-		ll ans = 0;
+	ll ans = 0;
         if (!n) break;
         stack<pl> s;
         pl tmp;
