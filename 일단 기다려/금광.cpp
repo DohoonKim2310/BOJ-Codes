@@ -14,7 +14,7 @@ int n;
 pair<ii,int> p[N];
 ll w[N][N];
 
-template <cosnt int N> struct fenwick_tree {
+template <const int N> struct fenwick_tree {
     ll t[N+1];
     void add(int k, ll v) {
         for (++k; k <= N; k += k&-k) t[k] += v;
